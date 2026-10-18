@@ -1,6 +1,6 @@
 ﻿namespace Generics.Src;
 
-public class Store<T>
+public class Store<T> where T : IHasId
 {
     private readonly List<T> _items = new();
 
